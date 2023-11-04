@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .patient-info {
+            background-color: #f0f0f0;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        .goal {
+            background-color: lightblue;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        .progress-bar {
+            background-color: #f0f0f0;
+            width: 100%;
+            position: relative;
+            height: 30px;
+            display: inline-block;
+        }
+        .progress-bar-inner {
+            height: 100%;
+            width: 0;
+            background-color: lightgreen;
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+    <div class="patient-info">
+        <h2 id="patient-name"></h2>
+        <p id="patient-id"></p>
+    </div>
+    <div class="goal">
+        <h2>Goal reached</h2>
+    </div>
+    <div class="progress-bar">
+        <div id="progress-bar-inner" class="progress-bar-inner"></div>
+    </div>
+    <script>
+        document.getElementById('patient-name').innerText = 'S.Meena/F23';
+        document.getElementById('patient-id').innerText = 'Patient ID: 87 202072715347';
+        document.getElementById('progress-bar-inner').style.width = '40%';
+    </script>
+</body>
+</html>
